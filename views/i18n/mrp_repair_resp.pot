@@ -1,0 +1,190 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* mrp_repair_resp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 08:41+0000\n"
+"PO-Revision-Date: 2019-02-12 08:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form
+msgid "<strong attrs=\"{'invisible': [('date_planned_finished', '=', False)]}\" class=\"mr8\">to</strong>\n"
+"                  <strong class=\"oe_edit_only mr8\" attrs=\"{'invisible': [('date_planned_finished', '!=', False)]}\">to</strong>"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form
+msgid "<strong class=\"mr8\">to</strong>"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_calendar
+msgid "Calendario"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_duration
+msgid "Duration"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_duration_percent
+msgid "Duration Deviation (%)"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_duration_unit
+msgid "Duration Per Unit"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form
+msgid "Effective Date"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_date_finished
+msgid "Effective finish date"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_date_start
+msgid "Effective start date"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_date_end
+msgid "End date"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_duration_expected
+msgid "Expected Duration"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,help:mrp_repair_resp.field_mrp_repair_duration_expected
+msgid "Expected duration (in minutes)"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_id
+msgid "ID"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form_filter
+msgid "My Repairs"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form
+msgid "Planned Date"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_duration
+msgid "Real Duration"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model,name:mrp_repair_resp.model_mrp_repair
+msgid "Repair Order"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_time_tracking_id
+msgid "Repair order"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_res_users_rep
+msgid "Repairs"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form_filter
+msgid "Responsible"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_date_planned_finished
+msgid "Scheduled Date Finished"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_date_planned_start
+msgid "Scheduled Date Start"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_tracking_repairs_date_start
+msgid "Start date"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model.fields,field_description:mrp_repair_resp.field_mrp_repair_time_ids
+msgid "Time"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form
+msgid "Time Tracking"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model,name:mrp_repair_resp.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.ui.view,arch_db:mrp_repair_resp.view_repair_order_form
+msgid "minutes"
+msgstr ""
+
+#. module: mrp_repair_resp
+#: model:ir.model,name:mrp_repair_resp.model_mrp_repair_time_tracking_repairs
+msgid "mrp.repair.time_tracking_repairs"
+msgstr ""
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_repair_order_tree" model="ir.ui.view">
+    <field name="name">mrp.repair.tree</field>
+    <field name="model">mrp.repair</field>
+    <field name="view_mode">tree,form,calendar</field>
+    <field name="inherit_id" ref="mrp_repair.view_repair_order_tree"/>
+
+    <field name="arch" type="xml">
+      <field name="name" position="after">
+        <field name="resp" />
+      </field>
+    </field>
+  </record>
+
+
+  <record id="view_repair_order_form_filter" model="ir.ui.view">
+    <field name="name">mrp.repair.form.filter</field>
+    <field name="model">mrp.repair</field>
+    <field name="view_mode">tree,form,calendar</field>
+    <field name="inherit_id" ref="mrp_repair.view_repair_order_form_filter"/>
+
+    <field name="arch" type="xml">
+      <search>
+        <filter string="My Repairs" name="myreps" domain="[('resp','=',uid)]"/>
+        <field name="resp" string="Responsible" />
+      </search>
+    </field>
+  </record>
+
+  <record id="mrp_repair.action_repair_order_tree" model="ir.actions.act_window">
+    <!-- <field name="inherit_id" ref="mrp_repair.action_repair_order_tree"/> -->
+    <field name="name">Repair Orders</field>
+    <field name="res_model">mrp.repair</field>
+    <field name="view_mode">tree,form,kanban,calendar</field>
+    <field name="context">
+      {'search_default_myreps': True}
+    </field>
+  </record>
+
+  <record id="view_repair_order_calendar" model="ir.ui.view">
+      <field name="name">mrp.repair.calendar</field>
+      <field name="model">mrp.repair</field>
+      <field name="view_mode">tree,form,calendar</field>
+      <field name="arch" type="xml">
+          <calendar date_stop="date_planned_finished" date_start="date_planned_start" string="Calendario">
+              <field name="resp"/>
+              <field name="product_id"/>
+          </calendar>
+      </field>
+  </record>
+
+  <record id="view_repair_order_form" model="ir.ui.view">
+    <field name="name">mrp.repair.form</field>
+    <field name="model">mrp.repair</field>
+    <field name="inherit_id" ref="mrp_repair.view_repair_order_form"/>
+    <field name="arch" type="xml">
+      <field name="invoice_method" position="after">
+        <field name="resp" />
+      </field>
+      <xpath expr="//form/sheet/notebook/page[2]"   position="after">
+        <page string="Time Tracking">
+          <group>
+            <group>
+              <label for="date_planned_start" string="Planned Date"/>
+              <div class="o_row">
+                <field name="date_planned_start" class="mr8"/>
+                <div attrs="{'invisible': [('date_planned_start', '=', False)]}" class="o_row">
+                  <strong attrs="{'invisible': [('date_planned_finished', '=', False)]}" class="mr8">to</strong>
+                  <strong class="oe_edit_only mr8" attrs="{'invisible': [('date_planned_finished', '!=', False)]}">to</strong>
+                  <field name="date_planned_finished"/>
+                </div>
+              </div>
+              <label for="date_start" string="Effective Date"/>
+              <div class="o_row">
+                <field name="date_start" readonly="1"/>
+                <div  attrs="{'invisible': [('date_finished', '=', False)]}">
+                  <strong class="mr8">to</strong>
+                  <field name="date_finished" readonly="1"/>
+                </div>
+              </div>
+            </group>
+            <group>
+              <label for="duration_expected"/>
+              <div>
+                <field name="duration_expected" widget="float_time" class="oe_inline"/>
+                minutes
+              </div>
+              <label for="duration"/>
+              <div>
+                <button style="pointer-events: none;" class="oe_inline label label-default">
+                  <field name="duration"/>
+                </button>
+              </div>
+            </group>
+          </group>
+          <group>
+            <field name="time_ids" nolabel="1" attrs="{'readonly': [('resp','=', False)]}" >
+              <tree >
+                <field name="date_start" string="Start date"/>
+                <field name="date_end" string="Final date"/>
+                <field name="duration"/>
+                <field name="resp"/>
+              </tree>
+            <form>
+                <group>
+                  <group>
+                    <field name="date_start" string="Start date" required="True"/>
+                    <field name="date_end" string="Final date" required="True"/>
+                    <field name="duration" widget="float_time"/>
+                  </group>
+                  <group>
+                    <field name="resp" />
+                    <field name="time_tracking_id"/>
+
+                  </group>
+                </group>
+              </form>
+            </field>
+          </group>
+        </page>
+      </xpath>
+
+    </field>
+  </record>
+</odoo>
