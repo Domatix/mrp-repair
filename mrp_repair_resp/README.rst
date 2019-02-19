@@ -22,9 +22,10 @@ Repairs Responsible
 
 |badge1| |badge2| |badge3| |badge4|
 
-fooThis module allows the addition of a responsible to a repair order. As such, it also allows time tracking for each repair operation made by a given responsible.
+This module allows the addition of a responsible to a repair order. As such, it also allows time tracking for each repair operation made by a given responsible.
 
 **Table of contents**
+
 .. contents::
    :local:
 
