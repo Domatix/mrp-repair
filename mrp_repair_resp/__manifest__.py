@@ -24,7 +24,10 @@
     "category": "Manufacturing",
     "author": "Domatix",
     "depends": ["mrp_repair", "mail"],
-    'data': ['views/mrp_repair_view.xml', ],
+    'data': [
+    	'views/mrp_repair_view.xml',
+    	'security/ir.model.access.csv',
+    ],
     "application": True,
     "installable": True
 }
