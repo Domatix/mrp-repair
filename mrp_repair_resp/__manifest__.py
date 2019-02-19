@@ -28,5 +28,4 @@
     'demo': ['data/mrp_repair_demo.yml', ],
     "application": True,
     "installable": True
-
 }
