@@ -24,8 +24,7 @@
     "category": "Manufacturing",
     "author": "Domatix",
     "depends": ["mrp_repair", "mail"],
-    'data': ['views/mrp_repair_view.xml', 'data/mrp_repair_demo.yml', ],
-    'demo': ['data/mrp_repair_demo.yml', ],
+    'data': ['views/mrp_repair_view.xml', ],
     "application": True,
     "installable": True
 }
