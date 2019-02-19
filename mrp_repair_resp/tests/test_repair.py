@@ -19,14 +19,8 @@ class TestRepair(TransactionCase):
             'date_end': fields.Datetime.from_string("2019-02-18 11:19:01")
         })
 
-        self.repair01 = self.env.ref('mrp_repair_resp.repair01')
-
-
-
-        self.repair02 = self.env.ref('mrp_repair_resp.repair02')
-
-
-
+        self.repair01 = self.env.ref('mrp_repair.mrp_repair_rmrp0')
+        self.repair02 = self.env.ref('mrp_repair.mrp_repair_rmrp1')
 
 
 

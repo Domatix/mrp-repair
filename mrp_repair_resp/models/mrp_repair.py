@@ -114,4 +114,4 @@ class TimeTrackingRepairs(models.Model):
                     raise exceptions.ValidationError(
                         _("Warning! End date is already due.")
                     )
-                    blocktime.date_end = blocktime.date_start
+                
