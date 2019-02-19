@@ -52,7 +52,7 @@ class Repairs(models.Model):
         "mrp.repair.time_tracking_repairs",
         "time_tracking_id")
 
-    @api.depends("time_ids", "date_start")
+    @api.depends("time_ids.date_start")
     def _compute_date_start(self):
         for record in self:
             if record.time_ids:
@@ -66,7 +66,7 @@ class Repairs(models.Model):
 
                 record.date_start = start
 
-    @api.depends("time_ids", "date_finished")
+    @api.depends("time_ids.date_end")
     def _compute_date_finished(self):
         for record in self:
             if record.time_ids:

@@ -20,12 +20,11 @@ Repairs Responsible
     :target: https://runbot.odoo-community.org/runbot/251/master
     :alt: Try me on Runbot
 
-|badge1| |badge2| |badge3| |badge4| 
+|badge1| |badge2| |badge3| |badge4|
 
-This module allows the addition of a responsible to a repair order. As such, it also allows time tracking for each repair operation made by a given responsible.
+fooThis module allows the addition of a responsible to a repair order. As such, it also allows time tracking for each repair operation made by a given responsible.
 
 **Table of contents**
-
 .. contents::
    :local:
 
