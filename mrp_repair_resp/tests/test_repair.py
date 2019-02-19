@@ -3,7 +3,7 @@ from odoo import fields
 
 class TestRepair(TransactionCase):
 
-    # crear 5 órdenes de seguimiento
+
     def setUp(self, *args, **kwargs):
         super(TestRepair, self).setUp(*args, **kwargs)
 
@@ -22,15 +22,11 @@ class TestRepair(TransactionCase):
         self.repair01 = self.env.ref('mrp_repair.mrp_repair_rmrp0')
         self.repair02 = self.env.ref('mrp_repair.mrp_repair_rmrp1')
 
-
-
-    # checks if:
-    ## repair01.time_ids' duration is equal to 60.0
-    ## repair01's duration and repair01.time_ids' duration are equal
     def test_duration_repair01(self):
         self.repair01.time_ids = [(4, self.time_ids01.id)]
         self.assertEqual(self.repair01.time_ids.duration, 60)
-        self.assertEqual(self.repair01.duration, self.repair01.time_ids.duration)
+        self.assertEqual(self.repair01.duration,
+            self.repair01.time_ids.duration)
 
     def test_duration_repair02(self):
         self.repair02.time_ids = [(6, 0, [self.time_ids01.id, self.time_ids02.id])]
