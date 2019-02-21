@@ -81,7 +81,6 @@ class TimeTrackingRepairs(models.Model):
     resp = fields.Many2one(
         comodel_name="res.users",
         string="Responsible",
-        delegate=True,
         default=_get_default_name)
 
     @api.depends("date_end", "date_start")
