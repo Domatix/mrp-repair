@@ -1,1 +1,2 @@
-from . import res_users, mrp_repair
+from . import mrp_repair
+from . import res_users

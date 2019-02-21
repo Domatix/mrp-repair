@@ -23,7 +23,7 @@
     "version": "0.1",
     "category": "Manufacturing",
     "author": "Domatix",
-    "depends": ["mrp_repair", "mail"],
+    "depends": ["mrp_repair"],
     'data': [
         'views/mrp_repair_view.xml',
         'security/ir.model.access.csv',

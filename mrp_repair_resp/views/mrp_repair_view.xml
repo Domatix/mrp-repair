@@ -5,21 +5,18 @@
     <field name="model">mrp.repair</field>
     <field name="view_mode">tree,form,calendar</field>
     <field name="inherit_id" ref="mrp_repair.view_repair_order_tree"/>
-
     <field name="arch" type="xml">
       <field name="name" position="after">
-        <field name="resp" />
+        <field name="resp" domain="[('resp','=',uid)]"/>
       </field>
     </field>
   </record>
-
 
   <record id="view_repair_order_form_filter" model="ir.ui.view">
     <field name="name">mrp.repair.form.filter</field>
     <field name="model">mrp.repair</field>
     <field name="view_mode">tree,form,calendar</field>
     <field name="inherit_id" ref="mrp_repair.view_repair_order_form_filter"/>
-
     <field name="arch" type="xml">
       <search>
         <filter string="My Repairs" name="myreps" domain="[('resp','=',uid)]"/>
@@ -29,7 +26,6 @@
   </record>
 
   <record id="mrp_repair.action_repair_order_tree" model="ir.actions.act_window">
-    <!-- <field name="inherit_id" ref="mrp_repair.action_repair_order_tree"/> -->
     <field name="name">Repair Orders</field>
     <field name="res_model">mrp.repair</field>
     <field name="view_mode">tree,form,kanban,calendar</field>
@@ -39,15 +35,15 @@
   </record>
 
   <record id="view_repair_order_calendar" model="ir.ui.view">
-      <field name="name">mrp.repair.calendar</field>
-      <field name="model">mrp.repair</field>
-      <field name="view_mode">tree,form,calendar</field>
-      <field name="arch" type="xml">
-          <calendar date_stop="date_planned_finished" date_start="date_planned_start" string="Calendario">
-              <field name="resp"/>
-              <field name="product_id"/>
-          </calendar>
-      </field>
+    <field name="name">mrp.repair.calendar</field>
+    <field name="model">mrp.repair</field>
+    <field name="view_mode">tree,form,calendar</field>
+    <field name="arch" type="xml">
+      <calendar date_stop="date_planned_finished" date_start="date_planned_start" string="Calendario">
+        <field name="resp"/>
+          <field name="product_id"/>
+      </calendar>
+    </field>
   </record>
 
   <record id="view_repair_order_form" model="ir.ui.view">
@@ -95,32 +91,17 @@
             </group>
           </group>
           <group>
-            <field name="time_ids" nolabel="1" attrs="{'readonly': [('resp','=', False)]}" >
-              <tree >
+            <field name="time_ids" context="{'resp':resp}" nolabel="1" attrs="{'readonly': [('resp','=', False)]}" >
+              <tree editable="top">
                 <field name="date_start" string="Start date"/>
                 <field name="date_end" string="Final date"/>
-                <field name="duration"/>
-                <field name="resp"/>
+                <field name="duration" sum="Duration"/>
+                <field name="resp" />
               </tree>
-            <form>
-                <group>
-                  <group>
-                    <field name="date_start" string="Start date" required="True"/>
-                    <field name="date_end" string="Final date" required="True"/>
-                    <field name="duration" widget="float_time"/>
-                  </group>
-                  <group>
-                    <field name="resp" />
-                    <field name="time_tracking_id"/>
-
-                  </group>
-                </group>
-              </form>
             </field>
           </group>
         </page>
       </xpath>
-
     </field>
   </record>
 </odoo>
