@@ -50,4 +50,4 @@ class TestRepair(TransactionCase):
             self.repair03.time_ids = [
                 (6, 0, [self.time_ids04.id, self.time_ids03.id])]
         except exceptions.ValidationError:
-            self.AassertEqual(len(self.repair03.time_ids), 0)
+            self.assertEqual(len(self.repair03.time_ids), 0)
