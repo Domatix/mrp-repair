@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="sale_order_view" model="ir.ui.view">
+    <field name="name">sale.order.operation_page</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+
+      <xpath expr="//sheet/notebook/page[1]" position="after">
+       <page string="Operations" name="operation_ids_page">
+         <field name="operation_ids" context='{"order_id":id}'>
+           <tree editable="top" >
+             <field name="product_id" required='True' domain="[('order_id', '=', order_id),'|',('product_id.type','=','consu'),('product_id.type', '=', 'product')]" options="{'no_create_edit':True}" ></field>
+             <field name="operation_id" required="True" domain="[('order_id', '=', order_id),('product_id.type', '=', 'service')]" options="{'no_create_edit':True}" ></field>
+             <field name="order_id" invisible='True'/>
+           </tree>
+         </field>
+       </page>
+       </xpath>
+
+    <div class="oe_button_box" name="button_box">
+     <button name="action_view_repair_orders" type="object" class="oe_stat_button" icon="fa-gears">
+       <field name="repair_orders_count" widget="statinfo" string=""/>
+     </button>
+    </div>
+
+
+      <xpath expr="//field[@name='order_line']/tree">
+        <field name="type"/>
+      </xpath>
+
+     </field>
+  </record>
+
+
+</odoo>

@@ -8,4 +8,5 @@
 | addon        | version           | summary  |
 | ------------- |:-------------:| :-----|
 | mrp_repair_resp|11.0.1.0.1  | Time-tracking and responsible user capabilities. |
+| sale_order_operation|11.0.1.0.1| Relating sale order's products with mrp_repair orders. | 
 

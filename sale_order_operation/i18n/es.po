@@ -1,0 +1,129 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sale_order_operation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-27 11:45+0000\n"
+"PO-Revision-Date: 2019-02-27 11:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_order_operation
+#: selection:sale.order.line,type:0
+msgid "Consumible"
+msgstr "Consumible"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_ids
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_operation_id
+msgid "Operation"
+msgstr "Operación"
+
+#. module: sale_order_operation
+#: model:ir.ui.view,arch_db:sale_order_operation.sale_order_view
+msgid "Operations"
+msgstr "Operaciones"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_mrp_repair_order_id
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_order_id
+msgid "Order"
+msgstr "Pedir"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_mrp_repair_origin_document
+msgid "Origin Document"
+msgstr "Documento de origen"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_operation_product_id
+#: selection:sale.order.line,type:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: sale_order_operation
+#: model:ir.model,name:sale_order_operation.model_sale_order
+msgid "Quotation"
+msgstr "Presupuesto"
+
+#. module: sale_order_operation
+#: model:ir.model,name:sale_order_operation.model_mrp_repair
+msgid "Repair Order"
+msgstr "Orden de reparación"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_repair_orders_count
+msgid "Repair Orders"
+msgstr "Órdenes de reparación"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_repair_ids
+msgid "Repairs"
+msgstr "Reparaciones"
+
+#. module: sale_order_operation
+#: model:ir.model,name:sale_order_operation.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de ventas"
+
+#. module: sale_order_operation
+#: selection:sale.order.line,type:0
+msgid "Service"
+msgstr "Service"
+
+#. module: sale_order_operation
+#: model:ir.model.fields,field_description:sale_order_operation.field_sale_order_line_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: sale_order_operation
+#: model:ir.model,name:sale_order_operation.model_sale_order_operation
+msgid "sale.order.operation"
+msgstr "sale.order.operation"
+
+#. module: sale_order_operation
+#: model:ir.model,name:sale_order_operation.model_sale_order_service_op
+msgid "sale.order.service_op"
+msgstr "sale.order.service_op"
