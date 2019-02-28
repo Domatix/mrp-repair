@@ -5,7 +5,6 @@
     <field name="model">sale.order</field>
     <field name="inherit_id" ref="sale.view_order_form"/>
     <field name="arch" type="xml">
-
       <xpath expr="//sheet/notebook/page[1]" position="after">
        <page string="Operations" name="operation_ids_page">
          <field name="operation_ids" context='{"order_id":id}'>
@@ -17,20 +16,14 @@
          </field>
        </page>
        </xpath>
-
-    <div class="oe_button_box" name="button_box">
-     <button name="action_view_repair_orders" type="object" class="oe_stat_button" icon="fa-gears">
-       <field name="repair_orders_count" widget="statinfo" string=""/>
-     </button>
-    </div>
-
-
+      <div class="oe_button_box" name="button_box">
+       <button name="action_view_repair_orders" type="object" class="oe_stat_button" icon="fa-gears">
+         <field name="repair_orders_count" widget="statinfo" string=""/>
+       </button>
+      </div>
       <xpath expr="//field[@name='order_line']/tree">
         <field name="type"/>
       </xpath>
-
      </field>
   </record>
-
-
 </odoo>
