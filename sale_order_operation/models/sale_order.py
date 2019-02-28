@@ -24,8 +24,8 @@ class SaleOrder(models.Model):
         )
 
     repair_orders_count = fields.Integer(
-            compute='_compute_repair_orders_count',
-            string='Repair Orders')
+        compute='_compute_repair_orders_count',
+        string='Repair Orders')
 
     repair_ids = fields.One2many(
         comodel_name='mrp.repair',

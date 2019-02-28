@@ -25,7 +25,10 @@
     "category": "Sales",
     "author": "Domatix",
     "depends": ["sale", "mrp_repair"],
-    'data': ['views/sale_order_view.xml', 'views/mrp_repair_order_view.xml'],
+    'data': [
+        'views/sale_order_view.xml',
+        'views/mrp_repair_order_view.xml',
+        'security/ir.model.access.csv'],
     "application": True,
     "installable": True
 
