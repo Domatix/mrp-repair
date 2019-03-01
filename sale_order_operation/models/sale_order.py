@@ -45,19 +45,6 @@ class SaleOrder(models.Model):
                     'product_uom': order_line.product_id.product_uom.id,
                     'location_dest_id':
                         self.env['mrp.repair']._default_stock_location(),
-                    'operations': [(0, 0, {
-                        'type': 'add',
-                        'product_id': order_line.product_id.id,
-                        'name': order_line.product_id.product_id.name,
-                        'product_uom_qty':
-                            order_line.product_id.product_uom_qty,
-                        'price_unit': order_line.product_id.price_unit,
-                        'product_uom': order_line.product_id.product_uom.id,
-                        'location_id':
-                            self.env['mrp.repair']._default_stock_location(),
-                        'location_dest_id':
-                            self.env['mrp.repair']._default_stock_location()
-                    })],
                     'fees_lines': [(0, 0, {
                         'product_id': order_line.operation_id.product_id.id,
                         'name': order_line.operation_id.name,
