@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_sale_order_operation,access_sale_order_operation,model_sale_order_operation,base.group_user,1,0,0,0
+access_sale_order_operation,access_sale_order_operation,model_sale_order_operation,sales_team.group_sale_salesman,1,1,1,0
+access_mrp_repair_fee_user,access_mrp_repair_fee,mrp_repair.model_mrp_repair_fee,sales_team.group_sale_salesman,1,1,1,1
+access_mrp_repair,access_mrp_repair,model_mrp_repair,sales_team.group_sale_salesman,1,1,1,0
+access_mrp_repair_line_user,access_mrp_repair_line,mrp_repair.model_mrp_repair_line,sales_team.group_sale_salesman,1,1,1,1

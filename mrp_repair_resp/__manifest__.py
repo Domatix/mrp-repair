@@ -1,30 +1,13 @@
-##############################################################################
-#
-#    OpenERP, Open Source Management Solution
-#    Copyright (c) 2015 Domatix (http://www.domatix.com)
-#                       info <email@domatix.com>
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
+# License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     "name": "Repairs Responsible",
-    "version": "0.1",
+    "version": "11.0.1.0.0",
+    "license": "AGPL-3",
     "category": "Manufacturing",
     "author": "Domatix",
+    "website": "https://domatix.com",
     "depends": ["mrp_repair"],
-    'data': [
+    "data": [
         'views/mrp_repair_view.xml',
         'security/ir.model.access.csv',
     ],
