@@ -17,7 +17,7 @@
        </page>
        </xpath>
       <div class="oe_button_box" name="button_box">
-       <button name="action_view_repair_orders" type="object" class="oe_stat_button" icon="fa-gears">
+       <button attrs="{'invisible': [('repair_orders_count', '=', 0)]}" name="action_view_repair_orders" type="object" class="oe_stat_button" icon="fa-gears" >
          <field name="repair_orders_count" widget="statinfo" string=""/>
        </button>
       </div>
